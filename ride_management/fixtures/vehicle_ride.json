@@ -1,0 +1,32 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Ride",
+  "image": "/private/files/Screenshot 2024-11-04 124426.png",
+  "make": "Ola",
+  "modified": "2024-11-05 15:12:09.194706",
+  "name": "Ride1",
+  "price_per_km": 10.0,
+  "type": "Type1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Ride",
+  "image": "/private/files/Screenshot 2024-11-04 124924.png",
+  "make": "Uber",
+  "modified": "2024-11-05 15:12:53.245574",
+  "name": "Ride2",
+  "price_per_km": 15.0,
+  "type": "Type1"
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Vehicle Ride",
+  "image": "/private/files/Screenshot 2024-10-22 182316.png",
+  "make": "Maker",
+  "modified": "2024-11-05 15:13:25.107080",
+  "name": "Ride3",
+  "price_per_km": 20.0,
+  "type": "Type1"
+ }
+]

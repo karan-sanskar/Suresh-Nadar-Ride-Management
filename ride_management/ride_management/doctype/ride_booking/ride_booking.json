@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-11-05 15:19:39.440485",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_0mf3",
+  "amended_from",
+  "naming_series",
+  "vehicle",
+  "make",
+  "type",
+  "price_per_km",
+  "estimated_km",
+  "section_break_voug",
+  "services",
+  "section_break_zryb",
+  "total_amount",
+  "customer",
+  "customer_name",
+  "phone_number",
+  "booking_date",
+  "return_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_0mf3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Ride Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Vehicle",
+   "options": "Vehicle Ride"
+  },
+  {
+   "fetch_from": "vehicle.make",
+   "fieldname": "make",
+   "fieldtype": "Read Only",
+   "label": "Make"
+  },
+  {
+   "fetch_from": "vehicle.type",
+   "fieldname": "type",
+   "fieldtype": "Read Only",
+   "label": "Type"
+  },
+  {
+   "fetch_from": "vehicle.price_per_km",
+   "fieldname": "price_per_km",
+   "fieldtype": "Read Only",
+   "label": "Price Per Km"
+  },
+  {
+   "fieldname": "estimated_km",
+   "fieldtype": "Float",
+   "label": "Estimated Km"
+  },
+  {
+   "fieldname": "section_break_voug",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "services",
+   "fieldtype": "Table",
+   "label": "Services",
+   "options": "Ride Add On"
+  },
+  {
+   "fieldname": "section_break_zryb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "customer.customer_name",
+   "fieldname": "customer_name",
+   "fieldtype": "Read Only",
+   "in_list_view": 1,
+   "label": "Customer Name"
+  },
+  {
+   "fetch_from": "customer.mobile_no",
+   "fieldname": "phone_number",
+   "fieldtype": "Read Only",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Booking Date"
+  },
+  {
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Return Date"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "naming_series",
+   "options": ".vehicle.YYYY.####"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-11-05 15:44:07.196615",
+ "modified_by": "Administrator",
+ "module": "Ride Management",
+ "name": "Ride Booking",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
